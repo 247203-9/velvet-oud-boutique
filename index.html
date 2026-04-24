@@ -32,41 +32,56 @@
     <h2 class="serif text-4xl mb-16 italic text-center gold-text">The 2026 Collection</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10">
         
-        <script>
-            const grid = document.querySelector('.grid');
-            const titles = [
-                "Oud Noir", "Golden Amber", "Desert Rose", "Velvet Musk", "Royal Incense",
-                "Silver Birch", "Night Jasmine", "Tobacco Leaf", "Citrus Grove", "Ethereal Mist",
-                "Midnight Rain", "Oceania", "Silk Road", "Forest Floor", "Black Pepper",
-                "Vanilla Sky", "Leather Oud", "Spiced Chai", "Saffron Sun", "Deep Forest",
-                "Amber Glow", "White Tea", "Purple Haze", "Cacao Dreams", "Spiced Plum",
-                "Winter Woods", "Sunkissed", "Moonlight", "Old Book", "Wild Fern"
-            ];
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1543467728-9147a4501b6a?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Oud Noir</h3><p class="font-bold">$320</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Golden Amber</h3><p class="font-bold">$285</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Desert Rose</h3><p class="font-bold">$210</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Velvet Musk</h3><p class="font-bold">$195</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1616132422293-5e366050074f?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Royal Incense</h3><p class="font-bold">$350</p>
+        </div>
 
-            titles.forEach((title, i) => {
-                const price = Math.floor(Math.random() * (350 - 150) + 150);
-                const html = `
-                <div class="group cursor-pointer">
-                    <div class="aspect-[3/4] overflow-hidden bg-zinc-900 mb-4 border border-white/5">
-                        <img src="https://picsum.photos/500/700?random=${i}" 
-                             alt="${title}" 
-                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700"
-                             onerror="this.src='https://placehold.jp/24/1a1a1a/ffffff/300x400.png?text=Luxury+Scent'">
-                    </div>
-                    <h3 class="serif text-lg">${title}</h3>
-                    <p class="font-bold text-white/90">$${price}</p>
-                </div>`;
-                grid.innerHTML += html;
-            });
-        </script>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1583445013765-48c220017144?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Silver Birch</h3><p class="font-bold">$180</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1557170334-a7c3c4e7f9e4?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Night Jasmine</h3><p class="font-bold">$225</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1512201066735-b5a6bc210433?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Tobacco Leaf</h3><p class="font-bold">$275</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1615485242231-897585090400?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Citrus Grove</h3><p class="font-bold">$160</p>
+        </div>
+        <div class="group">
+            <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=500" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4">
+            <h3 class="serif text-lg">Ethereal Mist</h3><p class="font-bold">$240</p>
+        </div>
 
-    </div>
+        <div class="group"><img src="https://images.unsplash.com/photo-1543467728-9147a4501b6a?w=500&sig=1" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4"><h3 class="serif text-lg">Midnight Rain</h3><p class="font-bold">$190</p></div>
+        <div class="group"><img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500&sig=2" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4"><h3 class="serif text-lg">Oceania</h3><p class="font-bold">$175</p></div>
+        <div class="group"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&sig=3" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4"><h3 class="serif text-lg">Silk Road</h3><p class="font-bold">$230</p></div>
+        <div class="group"><img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&sig=4" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4"><h3 class="serif text-lg">Forest Floor</h3><p class="font-bold">$210</p></div>
+        <div class="group"><img src="https://images.unsplash.com/photo-1616132422293-5e366050074f?w=500&sig=5" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition mb-4"><h3 class="serif text-lg">Black Pepper</h3><p class="font-bold">$195</p></div>
+
+        </div>
 </section>
-
-        
-            
-
-       
 
         
         
